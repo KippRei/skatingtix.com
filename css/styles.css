@@ -1,0 +1,55 @@
+html {
+    padding-top: 0;
+    margin-top: 0;
+}
+p {
+    font-size: 18pt;
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+}
+
+.brandColor {
+    color: #E28300;
+}
+
+#logo {
+    position: fixed;
+    top: 4px;
+    margin-left: 12px;
+    height: 42px;
+    width: auto;
+}
+
+#bannerText {
+    position: fixed;
+    top: 4px;
+    height: 20px;
+    width: auto;
+    margin-left: 62px;
+    margin-top: 13px;
+}
+
+#menuBtn {
+    position: fixed;
+    top: 4px;
+    right: 12px;
+    height: 42px;
+    width: auto;
+}
+
+#divider {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: 50px;
+}
+
+#topOfPage {
+    margin-top: 70px;
+}
