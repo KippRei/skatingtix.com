@@ -1,11 +1,15 @@
 html {
     padding-top: 0;
     margin-top: 0;
-}
-p {
-    font-size: 18pt;
+    overflow-x: hidden;
 }
 
+p {
+    font-size: 16pt;
+}
+
+
+/* Banner at top of page */
 #banner {
     position: fixed;
     top: 0;
@@ -40,7 +44,42 @@ p {
     top: 4px;
     right: 12px;
     height: 42px;
-    width: auto;
+    width: 37px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#upperBar {
+    position: fixed;
+    border-radius: 5px;
+    margin-top: 5px;
+    right: 12px;
+    width: 36px;
+    height: 7px;
+    background-color: #E28300;
+    transition: transform .3s, margin .3s;
+}
+
+#middleBar {
+    position: fixed;
+    border-radius: 5px;
+    margin-top: 17px;
+    right: 12px;
+    width: 36px;
+    height: 7px;
+    background-color: #E28300;
+    transition: background-color .2s;
+}
+
+#lowerBar {
+    position: fixed;
+    border-radius: 5px;
+    margin-top: 29px;
+    right: 12px;
+    width: 36px;
+    height: 7px;
+    background-color: #E28300;
+    transition: transform .3s, margin .3s;
 }
 
 #divider {
@@ -49,7 +88,82 @@ p {
     top: 0;
     margin-top: 50px;
 }
+/* END Banner at top of page */
+
+/* Menu */
+#menuBG {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color .3s;
+}
+
+#menu {
+    border-radius: 0px 0px 0px 3px;
+    position: fixed;
+    right: -270px;
+    background-color: #E28300;
+    width: 220px;
+    height: 0px;
+    transition: right .2s, height .2s;
+}
+
+.menuContent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuContentImg {
+    height: 32px;
+}
+/* END Menu */
 
 #topOfPage {
-    margin-top: 70px;
+    margin-top: 52px;
+}
+
+#contentBG {
+    position: relative;
+    background-color: #E28300;
+    z-index: -2;
+}
+
+#contentStart {
+    display: block;
+    background-image: linear-gradient(#ffffff 0%,#ffffff 20%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px;
+}
+
+.contentBlock {
+    display: block;
+    margin-top: 27vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, #ffffff 20%, #ffffff 80%, rgba(255, 255, 255, 0) 100%);
+    padding: 80px 30px 80px 30px;
+}
+
+.content {
+   color: black;
+   font-size: 14pt;
+}
+
+#imageBlock {
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+}
+
+#contentImage {
+    margin-top: 15vh;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    z-index: -1;
 }

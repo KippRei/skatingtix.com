@@ -39,35 +39,41 @@
     <div id="banner"></div>
     <img id="logo" src="/images/logo1.png" alt="Skatingtix.com Logo"/>
     <img id="bannerText" src="/images/logoText.png" alt="Skatingtix Logo Text"/>
-    <img id="menuBtn" src="/images/menu.png" alt="Menu Button">
+    <div id="menuBtn" alt="Menu Button">
+        <div id="upperBar"></div>
+        <div id="middleBar"></div>
+        <div id="lowerBar"></div>
+    </div>
     <hr id="divider" class="brandColor"/>
 
+    <div id="menuBG">
+        <div id="menu">
+            <a href="/contact.php"><div class="menuContent" id="contact"><img class="menuContentImg" src="/images/contactBtn.png"></div></a>
+            <a href="/help.php"><div class="menuContent" id="help"><img class="menuContentImg" src="/images/helpBtn.png"></div></a>
+        </div>
+    </div>
+
+<div id="contentBG">
     <div id="topOfPage"></div>
+    <div id="contentStart"></div>
+
+    <div id="imageBlock">
+        <img id="contentImage" src="/images/logo.png">
+    </div>
+
+    <div class="contentBlock" id="one">
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>  
+    </div>
+
     
-    
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
-    <p>Content</p>
+
+    <div class="contentBlock" id="two">
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>  
+    </div>
+</div>
 </body>
 </html>
