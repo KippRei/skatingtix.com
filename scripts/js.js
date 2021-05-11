@@ -2,12 +2,44 @@ $(document).ready(function(){
     document.getElementById("menuBtn").addEventListener("click", MenuToggle)
     document.getElementById("contact").addEventListener("click", ContactPage);
     document.getElementById("help").addEventListener("click", HelpPage);
+    
     var content = document.getElementsByClassName("contentBlock");
     // for (let i = 0; i < content.length; i++)
     // {
     //     content[i].addEventListener("change", CheckPosition)
     // }
 });
+
+var carouselCount = 1;
+setInterval(Carousel, 3500);
+
+function Carousel() {
+    if (carouselCount > 3) {carouselCount = 0;}
+
+    switch (carouselCount) {
+      case 1:
+        carouselCount++;
+        console.log(carouselCount);
+        document.getElementById("carouselImg").setAttribute("src", "/images/rollerhockey.jpg");
+        break;
+      case 2:
+        carouselCount++;
+        console.log(carouselCount);
+        document.getElementById("carouselImg").setAttribute("src", "/images/rollerderby.jpg");
+        break;
+      case 3:
+        carouselCount++;
+        console.log(carouselCount);
+        document.getElementById("carouselImg").setAttribute("src", "/images/iceskating1.jpg");
+        break;
+      default:
+        carouselCount++;
+        console.log(carouselCount);
+        document.getElementById("carouselImg").setAttribute("src", "/images/rollerrink.jpg");
+        break;
+
+    }
+}
 
 var isClosed = true;
 function MenuToggle() {
@@ -71,12 +103,20 @@ let lastKnownScrollPosition = 0;
 let ticking = false;
 $(document).ready(()=>{let one = document.getElementById("one");});
 let onePos = 0;
+let currImg = 0;
 
 function doSomething(scrollPos) {
-  if (scrollPos < 0)
+  if (scrollPos < 0 && currImg == 0)
   {
-      let img = document.getElementById("contentImage");
-      img.setAttribute("src", "/images/contactBtn.png");
+        let img = document.getElementById("contentImage");
+        img.setAttribute("src", "/images/contactBtn.png");
+        currImg = 1;
+  }
+  if (scrollPos > 0 && currImg == 1)
+  {
+        let img = document.getElementById("contentImage");
+        img.setAttribute("src", "/images/logo.png");
+        currImg = 0;
   }
 }
 

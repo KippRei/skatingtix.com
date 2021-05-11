@@ -4,7 +4,7 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">      
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple platform to sell tickets to any type of skate event!">
+    <meta name="description" content="A simple platform to sell tickets for any type of skate event!">
     
     
     
@@ -16,6 +16,7 @@
     
     
     <!-- Favicon Icons -->
+    <link rel="shortcut-icon" href="favicon.ico">
     <!-- icon in the highest resolution we need it for -->
     <link rel="icon" href="icon.png">
     
@@ -36,25 +37,48 @@
 </head>
 
 <body>
-    <div id="banner"></div>
-    <img id="logo" src="/images/logo1.png" alt="Skatingtix.com Logo"/>
-    <img id="bannerText" src="/images/logoText.png" alt="Skatingtix Logo Text"/>
-    <div id="menuBtn" alt="Menu Button">
-        <div id="upperBar"></div>
-        <div id="middleBar"></div>
-        <div id="lowerBar"></div>
-    </div>
-    <hr id="divider" class="brandColor"/>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div id="banner"></div>
+            <img id="logo" src="/images/logo1.png" alt="Skatingtix.com Logo"/>
+            <img id="bannerText" src="/images/logoText.png" alt="Skatingtix Logo Text"/>
+            <!-- <div id="menuBtn" alt="Menu Button">
+                <div id="upperBar"></div>
+                <div id="middleBar"></div>
+                <div id="lowerBar"></div>
+            </div> -->
+            <hr id="divider" class="brandColor"/>
 
-    <div id="menuBG">
-        <div id="menu">
-            <a href="/contact.php"><div class="menuContent" id="contact"><img class="menuContentImg" src="/images/contactBtn.png"></div></a>
-            <a href="/help.php"><div class="menuContent" id="help"><img class="menuContentImg" src="/images/helpBtn.png"></div></a>
+            <!-- <div id="menuBG">
+                <div id="menu">
+                    <a href="/contact.php"><div class="menuContent" id="contact"><img class="menuContentImg" src="/images/contactBtn.png"></div></a>
+                    <a href="/help.php"><div class="menuContent" id="help"><img class="menuContentImg" src="/images/helpBtn.png"></div></a>
+                </div>
+            </div> -->
+
+            <div id="screenMax">
+                <div id="myCarousel">
+                    <img id="carouselImg" src="/images/rollerrink.jpg" alt="Skating Images Carousel">
+                </div>
+
+                <div id="singleBlock">
+                    <div id="single">
+                        A simple, low-cost ticket selling platform for all things skate: open skate
+                        events, hockey pickups, roller derby, and anything else on wheels or blades.
+                        <br/><br/>We provide a custom listing page, payment processing, and full customer
+                        support.
+                        <br/><br/><a id="link" href="mailto: contact@skatingtix.com">
+                            Please contact us with any questions
+                            </a>
+                    </div>
+                </div>   
+            </div>
         </div>
+    <footer id="footer">
+        Copyright &#169 2021 <a href="https://skatingtix.com">Skatingtix.com</d>
+    </footer>
     </div>
-
-<div id="contentBG">
-    <div id="topOfPage"></div>
+    <!-- <div id="topOfPage"></div>
     <div id="contentStart"></div>
 
     <div id="imageBlock">
@@ -73,7 +97,6 @@
         <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         </div>  
-    </div>
-</div>
+    </div> -->
 </body>
 </html>
